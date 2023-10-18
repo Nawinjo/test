@@ -13,7 +13,7 @@ public class ScreenSh {
 public static void main(String[] args) throws Exception {
 	System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\org.demo\\Driver\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();
-	driver.get("https://www.amazon.in/");
+	driver.get("https://www.amazon.com/");
 	driver.manage().window().maximize();
 	TakesScreenshot tk = (TakesScreenshot) driver;
 	File src = tk.getScreenshotAs(OutputType.FILE);
